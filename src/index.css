@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  
+  --color-bg-deep: #050505;
+  --color-bg-surface: #121212;
+  --color-bg-card: #1C1C1E;
+  --color-border-subtle: #2C2C2E;
+  
+  --color-accent-green: #30D158;
+  --color-accent-blue: #0A84FF;
+  --color-accent-orange: #FF9F0A;
+  --color-accent-red: #FF453A;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #8E8E93;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-bg-deep text-text-primary antialiased;
+  }
+}
+
+.card {
+  @apply bg-bg-card border border-border-subtle rounded-[12px] p-5 relative transition-all duration-200;
+}
+
+.stat-label {
+  @apply text-[11px] uppercase tracking-[0.5px] text-text-secondary font-semibold mb-2;
+}
+
+.stat-value {
+  @apply text-2xl font-bold text-text-primary;
+}
+
+.nav-item {
+  @apply flex items-center gap-3 py-3 text-sm transition-colors text-text-secondary hover:text-text-primary;
+}
+
+.nav-item.active {
+  @apply text-text-primary font-semibold;
+}
+
+.xp-badge {
+  @apply bg-accent-orange text-black px-2.5 py-1 rounded-full text-[11px] font-extrabold uppercase;
+}
