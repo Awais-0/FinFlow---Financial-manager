@@ -50,7 +50,6 @@ backend/htmlcov/
 # =========================
 # IDE / EDITOR
 # =========================
-.vscode/
 .idea/
 
 # =========================
@@ -62,4 +61,4 @@ Thumbs.db
 # YOUR CUSTOM FILES
 # =========================
 temp_auto_push.bat
-temp_interactive_push.bat
+temp_interactive_push.bat.gitignore
