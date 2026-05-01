@@ -1,11 +1,57 @@
-node_modules/
-build/
-dist/
-coverage/
+# =========================
+# GENERAL
+# =========================
 .DS_Store
 *.log
 .env*
 !.env.example
+
+# =========================
+# FRONTEND (React)
+# =========================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/coverage/
+
+# Optional (if using Vite/Next etc.)
+frontend/.vite/
+frontend/.next/
+frontend/out/
+
+# =========================
+# BACKEND (FastAPI / Python)
+# =========================
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+
+backend/.Python
+backend/env/
+backend/venv/
+backend/ENV/
+
+backend/.env
+backend/.venv/
+
+# Database
+backend/*.db
+backend/*.sqlite3
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS / TEMP FILES
+# =========================
+Thumbs.db
+
+# =========================
+# YOUR CUSTOM FILES
+# =========================
 temp_auto_push.bat
 temp_interactive_push.bat
-.gitignore
