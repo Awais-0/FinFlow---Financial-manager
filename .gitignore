@@ -36,8 +36,16 @@ backend/.env
 backend/.venv/
 
 # Database
+backend/*.sql
 backend/*.db
 backend/*.sqlite3
+
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.pytest_cache/
+backend/htmlcov/
+
 
 # =========================
 # IDE / EDITOR

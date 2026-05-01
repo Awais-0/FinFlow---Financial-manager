@@ -1,0 +1,16 @@
+[project]
+name = "finflow-backend"
+version = "0.1.0"
+description = "FinFlow Financial Manager Backend"
+authors = [
+    { name = "User", email = "user@example.com" }
+]
+dependencies = [
+    "fastapi[standard]",
+    "uvicorn[standard]",
+    "sqlmodel",
+    "pydantic-settings",
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
